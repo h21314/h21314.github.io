@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="博客部署," />
 
 
 
@@ -87,15 +87,21 @@
 
 
 
-<meta name="description" content="笨鸟先飞">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hekm">
-<meta property="og:url" content="http://h21314.github.io/index.html">
+<meta name="description" content="1. 安装GitGit是一个非常流行的代码托管工具，并且github上有很多技术大牛分享的项目源码，所以第一步我们要先下载一个git客户端，并安装，一路next即可。如果想要学习Git的基础命令，我比较推荐廖雪峰的Git教程;但如果只是想学习如何搭建hexo博客，也可以不用去学习，看个人情况。
+2. 安装Node.jsNode.js是一个基于chrome JavaScript运行时建立的平台，能够">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo+github部署以及踩过的坑">
+<meta property="og:url" content="http://h21314.github.io/2017/03/22/第一篇博客/index.html">
 <meta property="og:site_name" content="Hekm">
-<meta property="og:description" content="笨鸟先飞">
+<meta property="og:description" content="1. 安装GitGit是一个非常流行的代码托管工具，并且github上有很多技术大牛分享的项目源码，所以第一步我们要先下载一个git客户端，并安装，一路next即可。如果想要学习Git的基础命令，我比较推荐廖雪峰的Git教程;但如果只是想学习如何搭建hexo博客，也可以不用去学习，看个人情况。
+2. 安装Node.jsNode.js是一个基于chrome JavaScript运行时建立的平台，能够">
+<meta property="og:image" content="http://h21314.github.io/../img/1/1.png">
+<meta property="og:updated_time" content="2017-03-23T13:52:58.810Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hekm">
-<meta name="twitter:description" content="笨鸟先飞">
+<meta name="twitter:title" content="hexo+github部署以及踩过的坑">
+<meta name="twitter:description" content="1. 安装GitGit是一个非常流行的代码托管工具，并且github上有很多技术大牛分享的项目源码，所以第一步我们要先下载一个git客户端，并安装，一路next即可。如果想要学习Git的基础命令，我比较推荐廖雪峰的Git教程;但如果只是想学习如何搭建hexo博客，也可以不用去学习，看个人情况。
+2. 安装Node.jsNode.js是一个基于chrome JavaScript运行时建立的平台，能够">
+<meta name="twitter:image" content="http://h21314.github.io/../img/1/1.png">
 
 
 
@@ -123,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://h21314.github.io/"/>
+  <link rel="canonical" href="http://h21314.github.io/2017/03/22/第一篇博客/"/>
 
 
 
 
 
-  <title> Hekm </title>
+  <title> hexo+github部署以及踩过的坑 | Hekm </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -154,9 +160,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -259,146 +263,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://h21314.github.io/2017/03/23/Git通过代理对远程仓库push/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Hekm">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hekm">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/03/23/Git通过代理对远程仓库push/" itemprop="url">
-                  Git通过代理对远程仓库push
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-23T19:15:37+08:00">
-                2017-03-23
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>###Git建立本地仓库<br>首先在本地新建一个文件夹，在该文件夹内右键选择Git Bash，执行下列命令，进行初始化<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git init</div></pre></td></tr></table></figure></p>
-<p>###git建立远程仓库<br>如何创建远程仓库这里就不再提了，需要注意的是，在创建远程仓库的时候如果勾选了创建README.md，你在本地对远程进行push的时候，本地是需要这个README.md文件 的，不然你在git push的时候会报下面这个错误</p>
-<blockquote>
-<p>failed to push some refs to yourgithubAddress</p>
-</blockquote>
-<p>如果出现这种情况，我们可以先将远程仓库pull下来，执行以下命令:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git pull --rebase origin master</div></pre></td></tr></table></figure></p>
-<p>这时候再git push应该就ok了。</p>
-<p>###git设置代理<br>我在公司使用git想将本地代码push到远程的时候，一直报</p>
-<blockquote>
-<p>connect to host github.com port 22: Connection timed out<br>fatal: Could not read from remote repository.</p>
-</blockquote>
-<p>这个错误，原因是我在公司是通过http代理上网的，而push到远程的时候git应该是不通过http代理的(这是我猜的，如果有误欢迎指出)，所以我们需要先在git中设置代理：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git config --global http.proxy http://代理的ip:端口</div></pre></td></tr></table></figure></p>
-<p>但这样设置代理后push到远程貌似只能通过http方式，不支持SSH方式push（我电脑上经过测试是这样的，如果哪位大神可以找到方法，麻烦告知一下）。要修改push的方式，进入.git文件夹，打开config文件，找到url那一项，那url的值改成</p>
-<blockquote>
-<p><a href="https://github.com/yourname/yourProj.git" target="_blank" rel="external">https://github.com/yourname/yourProj.git</a></p>
-</blockquote>
-<p>保存后重新进行push就行了，但这种方式每次push的时候都要输入用户名和密码，比较麻烦。而通过SSH方式push不用输用户名和密码（前提是你先配置好SSH），如何配置SSH自行百度，也很简单，但在公司又没法通过SSH push，所以很蛋疼，没找到两全其美的办法。手动哭脸。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
 
   
 
@@ -428,10 +295,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2017/03/22/第一篇博客/" itemprop="url">
-                  hexo+github部署以及踩过的坑
-                </a>
+                hexo+github部署以及踩过的坑
               
             
           </h1>
@@ -482,9 +346,7 @@
       
 
       
-        
-          
-            <h2 id="1-安装Git"><a href="#1-安装Git" class="headerlink" title="1. 安装Git"></a>1. <strong>安装Git</strong></h2><p>Git是一个非常流行的代码托管工具，并且github上有很多技术大牛分享的项目源码，所以第一步我们要先下载一个git客户端，并安装，一路next即可。如果想要学习Git的基础命令，我比较推荐<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" title="廖雪峰的Git教程" target="_blank" rel="external">廖雪峰的Git教程</a>;但如果只是想学习如何搭建hexo博客，也可以不用去学习，看个人情况。</p>
+        <h2 id="1-安装Git"><a href="#1-安装Git" class="headerlink" title="1. 安装Git"></a>1. <strong>安装Git</strong></h2><p>Git是一个非常流行的代码托管工具，并且github上有很多技术大牛分享的项目源码，所以第一步我们要先下载一个git客户端，并安装，一路next即可。如果想要学习Git的基础命令，我比较推荐<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" title="廖雪峰的Git教程" target="_blank" rel="external">廖雪峰的Git教程</a>;但如果只是想学习如何搭建hexo博客，也可以不用去学习，看个人情况。</p>
 <h2 id="2-安装Node-js"><a href="#2-安装Node-js" class="headerlink" title="2. 安装Node.js"></a>2. <strong>安装Node.js</strong></h2><p>Node.js是一个基于chrome JavaScript运行时建立的平台，能够方便的搭建响应速度快，易于扩展的网络应用，Node.js使用于事件驱动，非阻塞I/O模型而得以轻量和高效，适合用于分布式设备上运行数据密集的实时应用。我们可以去<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js官网</a>下载并安装，安装步骤也是一路使用默认的即可。</p>
 <h2 id="3-安装Hexo"><a href="#3-安装Hexo" class="headerlink" title="3. 安装Hexo"></a>3. <strong>安装Hexo</strong></h2><p>鼠标在桌面右键点击，选择Git Bash，打开后我们可以看到一个像cmd一样的命令行工具，执行以下命令,按回车结束;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-cli -g</div></pre></td></tr></table></figure></p>
 <p>这时候第一个坑就来了，由于在我自己电脑上的时候不用通过代理上网，执行这个命令后只需等待一段时间就好了，但在公司电脑上执行这个命令的时候，由于公司电脑是通过代理服务器上网的，而公司代理又被墙了，所以此时会一直报NETWORK ERR(网络错误)，这时需要执行以下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ npm config set strict-ssl false （关闭npm的https）；</div><div class="line">$ npm config set registry &quot;http://registry.npmjs.org/&quot; (设置npm的获取地址)</div><div class="line">$ npm config set proxy=http://代理服务器ip：代理服务器端口（设置npm获取的代理服务器地址）</div></pre></td></tr></table></figure></p>
@@ -506,171 +368,76 @@
 <p>字段，将landsca改成next（你下载的主题的名字）,然后执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo g</div><div class="line">$ hexo d</div></pre></td></tr></table></figure></p>
 <p>重新访问yourname.github.io就可以看到更换样式后的博客了。</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://h21314.github.io/2017/03/21/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Hekm">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hekm">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/03/21/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-21T21:13:30+08:00">
-                2017-03-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/博客部署/" rel="tag"># 博客部署</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
         
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
       
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/21/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/23/Git通过代理对远程仓库push/" rel="prev" title="Git通过代理对远程仓库push">
+                Git通过代理对远程仓库push <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -678,6 +445,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -697,8 +468,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -751,6 +531,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-安装Git"><span class="nav-number">1.</span> <span class="nav-text">1. 安装Git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-安装Node-js"><span class="nav-number">2.</span> <span class="nav-text">2. 安装Node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-安装Hexo"><span class="nav-number">3.</span> <span class="nav-text">3. 安装Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-注册Github账号"><span class="nav-number">4.</span> <span class="nav-text">4. 注册Github账号</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-创建repository"><span class="nav-number">4.1.</span> <span class="nav-text">4.1 创建repository</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-部署本地文件到Github上"><span class="nav-number">4.2.</span> <span class="nav-text">4.2 部署本地文件到Github上</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-更换主题"><span class="nav-number">5.</span> <span class="nav-text">5. 更换主题</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -863,6 +659,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
